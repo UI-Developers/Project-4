@@ -1,0 +1,103 @@
+/* -------------------------------------
+Extends
+--------------------------------------*/
+
+%nav-item-horz {
+	@include mq(medium) {
+		display: inline-block;
+		margin: 0 8px;
+	}
+}
+
+%nav-item-link {
+	font-size: 18px;
+	font-weight: $font-weight--light;
+	display: block;
+	padding-top: 13px;
+    padding-bottom: 13px;
+	text-decoration: none;
+	@include mq(medium) {
+		padding: 10px 15px 10px 15px;
+	}
+}
+
+/*Clearfix*/
+
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+/*For pseudo-elements*/
+
+%pseudos {
+	display: block;
+	content: '';
+	position: absolute;
+}
+
+/*Center elements*/
+
+.centered {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Links*/
+.link {
+	color: $color-primary;
+	text-decoration: none;
+	font-weight: $font-weight--bold;
+}
+
+/*Buttons*/
+
+%btn {
+	padding: 10px 52px;
+	border: 0;
+	border-radius: $br--default;
+	color: $white;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: $font-weight--bold;
+	transition: opacity $trns-duration;
+	display: block;
+	&:hover {
+		opacity: .75;
+	}
+	&:active {
+		opacity: initial;
+	}
+}
+
+/*Center alignment*/
+
+%center-align {
+	text-align: center;
+}
+
+/*Headlines*/
+
+%hdln--prim {
+  font-weight: $font-weight--ultra-bold;
+  font-size: 34px;
+  line-height: (46px / 34px);
+  margin-bottom : 70px;
+  color: $aquamarine-green;
+  margin-top: 0;
+  padding-left: 25px;
+}
+
+%hdln--sec {
+  font-size: 20px;
+  font-family: $font-family--secondary;
+  font-weight: $font-weight--thin;
+  color: $grey;
+  letter-spacing: 1px;
+  display: block;
+}
+

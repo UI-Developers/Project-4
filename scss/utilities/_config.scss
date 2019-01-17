@@ -1,0 +1,117 @@
+/* -------------------------------------
+Global Config
+--------------------------------------*/
+
+/*Fonts*/
+
+$font-url--google		    : 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+
+$font-family--primary   : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+/*Font Weights*/
+
+$font-weight--thin				: 100;
+$font-weight--light				: 300;
+$font-weight--medium			: 400;
+$font-weight--bold				: 700;
+$font-weight--ultra-bold	: 900;
+
+/*Description Base Colors*/
+
+$white 						: #ffffff;
+$black						: #000000;
+$grey							: #797e83;
+
+$aquamarine-green : #58e1c1;
+$fountain-blue    : #51ddfc;
+$emerald          : #5ece7f;
+$sunglo           : #e67478;
+$coral            : #ff784f;
+$purple-majesty   : #9279c3;
+$scooter          : #39add1;
+$blue-cobalt      : #3fabca;
+$lightblue        : #7ee6fd;
+$lilac            : #deb2ee;
+
+/*Color Usage*/
+
+$color-primary	 : $fountain-blue;
+$color-secondary : $scooter;
+$color-accent	   : $emerald;
+$color-shadow	   : rgba($black, .2);
+
+/*UI Colors*/
+
+$ui-colors: (
+  default : $fountain-blue,
+  success : $emerald,
+  error   : $sunglo,
+  warning : $coral,
+  info    : $purple-majesty,
+  col--12 : lighten($aquamarine-green, 10%),
+  col--6  : lighten($blue-cobalt, 10%),
+  col--4  : lighten($lightblue, 10%),
+  col--3  : lighten($lilac, 10%),
+  col--5  : lighten($emerald, 10%),
+  col--7  : lighten($sunglo, 10%),
+  col--8  : lighten($coral, 10%)
+);
+
+/*Color Palette Modifiers*/
+
+$palettes: (
+	grey: (
+		xx-light : lighten($grey, 43%),
+		x-light  : lighten($grey, 35%),
+		light    : lighten($grey, 12%),
+		base     : $grey,
+		dark     : darken($grey, 8%),
+		x-dark   : darken($grey, 16%)
+	),
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+/*Text*/
+
+$base__font-size	: 16px;
+$base__line       : 24px;
+
+/*Grid*/
+
+$g-col-width			: 65px;
+$g-gutter-width   : 20px;
+$g-col-count      : 12;
+$g-cont-max-w     : 1200px;
+
+/*Border Radius*/
+
+$br--default   : .4em;
+$br--round	   : 50%;
+
+/*Transitions*/
+
+$trns-duration  : .3s;
+
+/*Screen Reader Text*/
+
+.srt {
+	border          : 0;
+	clip            : rect(0 0 0 0);
+	height          : 1px;
+	margin          : -1px;
+	overflow        : hidden;
+	padding         : 0;
+	position        : absolute;
+	width           : 1px;
+}
+
+/*Breakpoints*/
+
+$brkpoint-sm		: 1px;
+$brkpoint-md    : 768px;
+$brkpoint-lg    : 1100px;

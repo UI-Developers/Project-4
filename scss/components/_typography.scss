@@ -1,0 +1,43 @@
+/* -------------------------------------
+Typography
+--------------------------------------*/
+
+body {
+	font-size: $base__font-size;
+	line-height: ($base__line / $base__font-size);
+	font-family: $font-family--primary;
+}
+
+.headline--primary {
+	@extend %hdln--prim;
+}
+
+.headline--secondary:not(:first-child) {
+	@extend %hdln--sec;
+	margin-left: em(20px);
+	margin-bottom: em(40px);
+}
+
+.headline {
+	&--primary {
+		@extend %hdln--prim;
+		margin-bottom: em(45px, 42px);
+	}
+
+	&--secondary {
+		@extend %hdln--sec;
+	}
+}
+
+.blockquote {
+	font-size: em(24px);
+	font-style: italic;
+	font-weight: $font-weight--medium;
+	padding: 0 0 0 5%;
+	color: palette(grey, dark);
+	border-left: solid em(8px, 24px) $aquamarine-green;
+}
+
+.card {
+	text-align: left;
+}
