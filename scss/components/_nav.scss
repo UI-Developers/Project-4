@@ -9,7 +9,7 @@ Navigation
 	margin-right: 0;
 	text-align: center;
 	@include mq(medium) {
-		text-align: right;
+	  @include flexy($dir: row, $just: flex-end);
 		margin-right: 20px;
 		margin-top: em(60px);
 	}

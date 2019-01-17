@@ -32,6 +32,7 @@ Mixins
 /*Adjacent sibling margins*/
 /*BEM Selectors*/
 /*Grid Columns*/
+/*Create a flex container*/
 /* -------------------------------------
 Extends
 --------------------------------------*/
@@ -766,7 +767,9 @@ Navigation
   text-align: center; }
   @media (min-width: 769px) {
     .nav {
-      text-align: right;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
       margin-right: 20px;
       margin-top: 3.75em; } }
   .nav__item a {
