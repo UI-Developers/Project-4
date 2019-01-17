@@ -38,7 +38,7 @@ Extends
 @media (min-width: 769px) {
   .nav__item {
     display: inline-block;
-    margin: 0 8px; } }
+    margin: 0px 0px 0px 0px; } }
 
 .nav__item a {
   font-size: 18px;

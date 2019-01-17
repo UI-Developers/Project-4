@@ -5,7 +5,7 @@ Extends
 %nav-item-horz {
 	@include mq(medium) {
 		display: inline-block;
-		margin: 0 8px;
+		margin: 0px 0px 0px 0px;
 	}
 }
 
@@ -14,7 +14,7 @@ Extends
 	font-weight: $font-weight--light;
 	display: block;
 	padding-top: 13px;
-    padding-bottom: 13px;
+  padding-bottom: 13px;
 	text-decoration: none;
 	@include mq(medium) {
 		padding: 10px 15px 10px 15px;
